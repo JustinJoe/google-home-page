@@ -1,0 +1,150 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 1rem;
+  font-weight: 300;
+  font-family: sans-serif;
+  text-align: center;
+  color: black;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: 80%;
+  margin-top: 1em;
+  gap: 1.5em;
+  height: 2em;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+nav button {
+  background-color: #1a73e8;
+  color: white;
+  padding: 0.75em 1.75em;
+  margin-right: 1em;
+  border: 1px solid #1a73e8;
+  border-radius: 0.25em;
+}
+
+nav a img {
+  border: 8px solid transparent;
+  border-radius: 50%;
+}
+
+nav a img:hover {
+  border: 8px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+nav button:hover {
+  background-color: rgba(26, 115, 232, 0.75);
+}
+
+main {
+  padding: 14em 0;
+}
+
+main img {
+  display: block;
+  margin: 0 auto;
+}
+
+main div p {
+  margin-top: 3em;
+  font-size: 0.875rem;
+}
+
+main div p a {
+  color: blue;
+}
+
+input {
+  margin: 2em 0;
+  padding: 1em 3em;
+  width: 40%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  outline: transparent;
+}
+
+input:hover {
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+div button {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  border: 1px solid transparent;
+  font-size: 1rem;
+  padding: 0.5em 1em;
+}
+
+footer div p {
+  padding: 0.5em 2em;
+  text-align: left;
+}
+
+button + p > a {
+  color: blue;
+}
+
+button:hover {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.1);
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  color: #70757a;
+}
+
+.footer-container {
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+  padding: 0.5em 2em;
+}
+
+.footer-container div a {
+  color: #70757a;
+}
+
+.footer-left {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 1em;
+}
+
+.footer-right {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: 1em;
+}
